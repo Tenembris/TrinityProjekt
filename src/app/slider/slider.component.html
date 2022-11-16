@@ -1,0 +1,29 @@
+<div class="center">
+    <h1>Welcome</h1>
+    <div class="card">
+        <!-- <img src="assets/campfire.gif" alt="cover" /> -->
+        <div *ngIf="images && images.length > 0" class="slidershow-container">
+            <img *ngFor="let image of images; let i = index" [src]="image.imageSrc" [alt]="image.imageAlt" [ngClass]="{ 'image-active': selectedIndex === i }" />
+            <div *ngIf="indicators" class="slider-dot-container">
+                <span *ngFor="let dot of images; let i = index" class="dot" [ngClass]="{ active: selectedIndex === i }" (click)="selectImage(i)"></span>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="slider-buttons">
+                <div class="slider-button btn-prev">
+                    <button class="btn btn-primary slider-button btn-prev" type="button" (click)="onPrevClick()">
+            <i class="bi bi-caret-left-fill"></i>
+          </button>
+                </div>
+                <!-- <button class="btn btn-primary slider-button" type="button ">
+          Button
+        </button> -->
+                <button class="btn btn-primary slider-button btn-next" type="button " (click)="onNextClick()">
+          <i class="bi bi-caret-right-fill"></i>
+        </button>
+            </div>
+            <!-- <h4>placeholder</h4> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="Weather-main">
+    <h1 id="City_title">{{ WeatherData.name }}</h1>
+
+    <div class="Weather-params">
+        <h1>{{ WeatherData.temp_celcius }}°C</h1>
+        <div class="container text-center" id="Weather-args">
+            <div class="row">
+                <div class="col">
+                    <i class="bi bi-thermometer-snow"></i> Min: {{ WeatherData.temp_min }}°C
+                </div>
+                <div class="col">
+                    <i class="bi bi-thermometer-sun"></i>Max: {{ WeatherData.temp_max }}°C
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="bi bi-moisture"></i> {{ WeatherData.main.humidity }}%
+                </div>
+                <div class="col">{{ WeatherData.main.pressure }}hPa</div>
+            </div>
+        </div>
+    </div>
+    <form>
+        <input type="text" name="search" id="search-city" value="" />
+        <input type="submit" value="Submit" (click)="getWeatherData()" />
+    </form>
+</div>

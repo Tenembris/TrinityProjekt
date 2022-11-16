@@ -1,0 +1,383 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #7e82e1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #9ba3cc;
+    border-radius: 25px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.app-root {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4158D0;
+    /* background-image: url("assets/layer1.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 0;
+}
+
+.Dark_Mode {
+    width: 100%;
+    height: 100vh;
+    background-color: #252525;
+    background-image: url("assets/wave-dark.svg");
+    display: flex;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+.Dark_Mode_button {
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+}
+
+.main-container {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.div-table {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #ffff;
+    padding-bottom: 10px;
+}
+
+.H2_Dark_theme {
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h3_Dark {
+    color: green;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+#button-addon2 {
+    color: white;
+    padding: 10px;
+}
+
+table {
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tbody,
+td {
+    background-color: white;
+    text-align: center;
+}
+
+tr {
+    border-radius: 25px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+#xMark {
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+
+.theme_mode {
+    text-align: center;
+    padding: 15px;
+}
+
+#tittle-h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.card {
+    width: 40rem;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+
+/* .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2px 16px;
+    gap: 4;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.center {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("assets/again5.svg");
+    background-size: cover; */
+}
+
+img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    justify-content: center;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.slider-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.slider-button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.MySlides {
+    display: none;
+}
+
+.slidershow-container {
+    position: relative;
+    width: 90%;
+}
+
+.slidershow-container img {
+    display: none;
+}
+
+.slidershow-container img.image-active {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.slider-dot-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.5;
+}
+
+.active,
+.dot:hover {
+    opacity: 1;
+}
+
+.test-component {
+    background-color: #7e82e1;
+    /* background-image: url("assets/again5.svg");
+    background-size: cover; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.foreground-1 {
+    transform: translateZ(-10px) scale(2);
+}
+
+
+/* .foreground-1 {
+    z-index: 1;
+    position: absolute;
+} */
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* .Placeholder {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+} */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#Weather-main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Weather-params {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40rem;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+}
+
+#City_title {
+    color: white;
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+#Temp {
+    color: white;
+    font-size: 48px;
+}
+
+.Weather-params {
+    color: white;
+    padding-top: 15px;
+}
+
+#Weather-args {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+#moon {
+    width: 50%;
+    height: 50%;
+}
