@@ -12,3 +12,5 @@ The application on which I was learning Angular features the following component
 5 Subtle Effects like Parallax: Experience delightful user interactions with subtle effects like the parallax effect, adding a touch of elegance to the application.
 
 With these remarkable features, the Angular learning application ensures a seamless and engaging user experience, making the process of learning even more enjoyable.
+
+Link: https://trinity-project-app.web.app/
